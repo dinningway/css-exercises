@@ -1,29 +1,82 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin: 0;
-  min-height: 100vh;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	margin: 0;
+	min-height: 100vh;
+	/*MY ANSWERS*/
+	display: flex;
+	flex-direction: column;
 }
 
 .header {
-  height: 72px;
-  background: darkmagenta;
-  color: white;
+	height: 72px;
+	background: darkmagenta;
+	color: white;
+	/*MY ANSWERS*/
+	font-size: 32px;
+	font-weight: 900;
+	padding: 0 16px 0 16px;
+	display: flex;
+	align-items: center; /*aligns in center on y-axis*/
+}
+
+/*MY ANSWERS*/
+.content {
+	display: flex;
+	flex: 1 1 auto; /*fills up entire page*/
 }
 
 .footer {
-  height: 72px;
-  background: #eee;
-  color: darkmagenta;
+	height: 72px;
+	background: #eee;
+	color: darkmagenta;
+	/*MY ANSWERS*/
+	margin-top: auto; /*this is needed in order to push footer all the way to the bottom*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .sidebar {
-  width: 300px;
-  background: royalblue;
-  box-sizing: border-box;
+	width: 300px;
+	padding: 16px;
+	background: royalblue;
+	box-sizing: border-box;
+	/* flex: 0 0 300px; flex-basis set to 300px */
+	flex-shrink: 0; /*correct answer, works too*/
+}
+
+/*MY ANSWERS*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin-bottom: 16px;
+}
+
+a {
+	font-size: 24px;
+	text-decoration: none;
+	color: white;
+}
+
+.card-container {
+	padding: 32px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .card {
-  border: 1px solid #eee;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
-  border-radius: 4px;
+	border: 1px solid #eee;
+	box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
+	border-radius: 4px;
+	/*MY ANSWERS*/
+	padding: 16px; /*made it more centered-ish*/
+	margin: 16px; /*adjusted space in relation to another <div>...*/
+	width: 300px; /*need this to actually adjust the WIDTH of the cards*/
+
+	/* bruh they did not have specifications for the top three */
 }
